@@ -1,0 +1,8 @@
+# django-admin startproject UrbanDjango
+# cd DBAPPS
+# python manage.py runserver
+# python manage.py startapp task1
+# python manage.py startapp example2
+# python manage.py startapp example3
+# python manage.py makemigrations
+# python manage.py migrate
