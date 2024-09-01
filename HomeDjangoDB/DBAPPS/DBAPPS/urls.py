@@ -23,6 +23,7 @@ urlpatterns = [
     path('platform/', platform_temp.as_view()),
     path('platform/games/', games_temp.as_view()),
     path('platform/cart/', cart_temp.as_view()),
+    path('plagi/', plagi_temp),
     path('', menu.as_view(template_name="fourth_task/menu.html")),
     # path('registration/', sign_up_by_html),
     path('registration/', sign_up_by_django),
