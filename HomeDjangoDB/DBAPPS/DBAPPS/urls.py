@@ -1,5 +1,5 @@
 """
-URL configuration for DBAPPS project.
+URL configuration for UrbanDjango project.
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/4.2/topics/http/urls/
@@ -16,7 +16,14 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from task1.views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('platform/', platform_temp.as_view()),
+    path('platform/games/', games_temp.as_view()),
+    path('platform/cart/', cart_temp.as_view()),
+    path('', menu.as_view(template_name="fourth_task/menu.html")),
+    # path('registration/', sign_up_by_html),
+    path('registration/', sign_up_by_django),
 ]
